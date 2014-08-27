@@ -7,4 +7,17 @@
 // for using these tutorials.
 // Then just start coding away in this file
 
+var filter = require('./filtered-ls');
+var dir = process.argv[2];
+var ext = process.argv[3];
 
+filter(dir, ext, function (err, files) {
+    if (err) {
+        log(err);
+    }
+    files.forEach(log);
+});
+
+function log(arg) {
+    console.log(arg);
+}

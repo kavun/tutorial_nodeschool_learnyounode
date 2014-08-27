@@ -7,3 +7,4 @@
 // for using these tutorials.
 // Then just start coding away in this file
 
+console.log('HELLO WORLD');
